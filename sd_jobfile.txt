@@ -1,0 +1,17 @@
+[global]
+ioengine=io_uring
+sync=1
+iodepth=32
+rw=${TEST}
+randrepeat=0
+bs=${BS}
+direct=1
+#ramp_time=15
+#runtime=30
+ramp_time=30
+runtime=120
+time_based
+group_reporting
+
+[job 1]
+filename=/dev/nvme2n1

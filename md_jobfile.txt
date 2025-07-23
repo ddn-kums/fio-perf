@@ -1,0 +1,50 @@
+[global]
+ioengine=io_uring
+sync=1
+iodepth=32
+rw=${TEST}
+randrepeat=0
+bs=${BS}
+direct=1
+#ramp_time=15
+#runtime=10
+ramp_time=30
+runtime=120
+time_based
+group_reporting
+
+[job 1]
+filename=/dev/nvme0n1
+
+[job 2]
+filename=/dev/nvme1n1
+
+[job 3]
+filename=/dev/nvme2n1
+
+[job 4]
+filename=/dev/nvme3n1
+
+[job 5]
+filename=/dev/nvme4n1
+
+[job 6]
+filename=/dev/nvme5n1
+
+[job 7]
+filename=/dev/nvme6n1
+
+[job 8]
+filename=/dev/nvme7n1
+
+[job 9]
+filename=/dev/nvme8n1
+
+[job 10]
+filename=/dev/nvme9n1
+
+[job 11]
+filename=/dev/nvme10n1
+
+[job 12]
+filename=/dev/nvme11n1
